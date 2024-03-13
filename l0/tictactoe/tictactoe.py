@@ -51,6 +51,10 @@ def result(board, action):
     """
     Returns the board that results from making move (i, j) on the board.
     """
+    if action[0] not in range(0,3) or action[1] not in range(0, 3):
+        raise Exception("cannot play there, stick to the board boardy")
+    if board[action[0]][action[1]] != EMPTY:
+        raise Exception("cannot play there, taken")
     newBoard = [[EMPTY, EMPTY, EMPTY],
         [EMPTY, EMPTY, EMPTY],
         [EMPTY, EMPTY, EMPTY]]
