@@ -1,0 +1,127 @@
+<mxfile host="Electron" modified="2024-03-15T04:51:47.767Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="XZ5N198zp3f2LG2Lf5lL" version="24.0.4" type="device" pages="2">
+  <diagram name="algo classification" id="1622d65d-c77d-c4b6-e0e7-3c11208c8684">
+    <mxGraphModel dx="764" dy="640" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1.5" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" style=";html=1;" />
+        <mxCell id="1" style=";html=1;" parent="0" />
+        <mxCell id="pLYbQeAZib1bkslnu75w-1" value="Ai" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;container=0;verticalAlign=top;fontFamily=Georgia;flipH=1;flipV=1;labelBackgroundColor=none;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="330" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pLYbQeAZib1bkslnu75w-2" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;Supervised Learning&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;These algorithms learn from labeled training data to make predictions or&lt;br&gt; decisions. They are widely used in classification and regression tasks&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;labelBackgroundColor=none;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="150" y="65" width="670" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pLYbQeAZib1bkslnu75w-5" value="Semi-supervised Learning" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;labelBackgroundColor=none;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="150" y="195" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pLYbQeAZib1bkslnu75w-4" value="Reinforcement Learning" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;labelBackgroundColor=none;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="150" y="275" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pLYbQeAZib1bkslnu75w-3" value="Unsupervised learning" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;labelBackgroundColor=none;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="150" y="355" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pLYbQeAZib1bkslnu75w-8" value="Deep Learning Architectures" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;flipH=1;flipV=1;labelBackgroundColor=none;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="150" y="435" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pLYbQeAZib1bkslnu75w-6" value="Evolutionary" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;flipH=1;flipV=1;labelBackgroundColor=none;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="150" y="515" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pLYbQeAZib1bkslnu75w-7" value="Neuro-Evolution" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;flipH=1;flipV=1;labelBackgroundColor=none;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="150" y="595" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pLYbQeAZib1bkslnu75w-22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;labelBackgroundColor=none;strokeColor=#E07A5F;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="pLYbQeAZib1bkslnu75w-1" target="pLYbQeAZib1bkslnu75w-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590.2988505747128" y="-501.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLYbQeAZib1bkslnu75w-23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;labelBackgroundColor=none;strokeColor=#E07A5F;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="pLYbQeAZib1bkslnu75w-1" target="pLYbQeAZib1bkslnu75w-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="-420" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLYbQeAZib1bkslnu75w-24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;labelBackgroundColor=none;strokeColor=#E07A5F;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="pLYbQeAZib1bkslnu75w-1" target="pLYbQeAZib1bkslnu75w-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590.2988505747128" y="-339.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLYbQeAZib1bkslnu75w-25" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;labelBackgroundColor=none;strokeColor=#E07A5F;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="pLYbQeAZib1bkslnu75w-1" target="pLYbQeAZib1bkslnu75w-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590.2988505747128" y="-258.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLYbQeAZib1bkslnu75w-26" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;shadow=1;labelBackgroundColor=none;strokeColor=#E07A5F;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="pLYbQeAZib1bkslnu75w-1" target="pLYbQeAZib1bkslnu75w-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590.2988505747128" y="-177.5" as="sourcePoint" />
+            <mxPoint x="-625" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLYbQeAZib1bkslnu75w-27" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;labelBackgroundColor=none;strokeColor=#E07A5F;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="pLYbQeAZib1bkslnu75w-1" target="pLYbQeAZib1bkslnu75w-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590.2988505747128" y="-96.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLYbQeAZib1bkslnu75w-28" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;labelBackgroundColor=none;strokeColor=#E07A5F;fontColor=default;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="pLYbQeAZib1bkslnu75w-1" target="pLYbQeAZib1bkslnu75w-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590.2988505747128" y="-15.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="n4suElpBdyEggx3r6PEn" name="Supervised Learning">
+    <mxGraphModel dx="726" dy="608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uRvbGDv0hIpHDUg8ANP7-1" value="machine learning" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontSize=22;fontStyle=0;fontFamily=Georgia;container=1;arcSize=5;fillStyle=auto;fillColor=#FAE5C7;strokeColor=#0F8B8D;horizontal=1;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="81" y="60" width="809.16" height="945" as="geometry">
+            <mxRectangle x="-10" y="30" width="230" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRvbGDv0hIpHDUg8ANP7-4" value="supervised learning" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontSize=22;fontStyle=0;fontFamily=Georgia;arcSize=5;fillStyle=auto;fillColor=#FAE5C7;strokeColor=#0F8B8D;container=1;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="uRvbGDv0hIpHDUg8ANP7-1">
+          <mxGeometry x="30" y="50" width="366" height="324" as="geometry" />
+        </mxCell>
+        <mxCell id="uRvbGDv0hIpHDUg8ANP7-10" value="Regression (continuos image)" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontSize=22;fontStyle=0;fontFamily=Georgia;container=1;arcSize=5;fillColor=#FAE5C7;strokeColor=#0F8B8D;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" collapsed="1" parent="uRvbGDv0hIpHDUg8ANP7-4">
+          <mxGeometry x="19.92" y="200" width="320.08" height="100" as="geometry">
+            <mxRectangle x="19.92" y="200" width="550" height="652" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRvbGDv0hIpHDUg8ANP7-5" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Classification (discrete image)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontSize=22;fontStyle=0;fontFamily=Georgia;container=1;arcSize=5;fillColor=#FAE5C7;strokeColor=#0F8B8D;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" collapsed="1" parent="uRvbGDv0hIpHDUg8ANP7-4">
+          <mxGeometry x="19.92" y="60" width="320" height="120" as="geometry">
+            <mxRectangle x="19.92" y="60" width="550" height="652" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRvbGDv0hIpHDUg8ANP7-6" value="&lt;p style=&quot;font-size: 22px;&quot;&gt;k-nearest-neighbors classification&lt;br style=&quot;font-size: 22px;&quot;&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=0;fontFamily=Georgia;arcSize=5;aspect=fixed;flipH=0;flipV=0;gradientDirection=radial;labelBorderColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="uRvbGDv0hIpHDUg8ANP7-5">
+          <mxGeometry x="30" y="424.22" width="250" height="152.44" as="geometry" />
+        </mxCell>
+        <mxCell id="uRvbGDv0hIpHDUg8ANP7-7" value="&lt;h2 style=&quot;font-size: 22px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;linear regression (&lt;span style=&quot;font-size: 22px;&quot;&gt;Perceptron Learning)&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=0;fontFamily=Georgia;arcSize=5;aspect=fixed;flipH=0;flipV=0;gradientDirection=radial;labelBorderColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="uRvbGDv0hIpHDUg8ANP7-5">
+          <mxGeometry x="30" y="242" width="250" height="152.44" as="geometry" />
+        </mxCell>
+        <mxCell id="uRvbGDv0hIpHDUg8ANP7-8" value="&lt;h2 style=&quot;font-size: 22px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Support Vector Machine&lt;/span&gt;&lt;br&gt;&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=0;fontFamily=Georgia;arcSize=5;aspect=fixed;flipH=0;flipV=0;gradientDirection=radial;labelBorderColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="uRvbGDv0hIpHDUg8ANP7-5">
+          <mxGeometry x="30" y="60" width="250" height="152.44" as="geometry" />
+        </mxCell>
+        <mxCell id="uRvbGDv0hIpHDUg8ANP7-17" value="&lt;p style=&quot;font-size: 22px;&quot;&gt;Unsu&lt;span style=&quot;background-color: initial;&quot;&gt;pervised learning&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontSize=22;fontStyle=0;fontFamily=Georgia;arcSize=5;flipH=0;flipV=0;gradientDirection=radial;labelBorderColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelPosition=center;verticalLabelPosition=middle;container=1;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="uRvbGDv0hIpHDUg8ANP7-1">
+          <mxGeometry x="430" y="50" width="379.15999999999997" height="624" as="geometry" />
+        </mxCell>
+        <mxCell id="uRvbGDv0hIpHDUg8ANP7-18" value="&lt;p style=&quot;font-size: 22px;&quot;&gt;Clustering&lt;br style=&quot;font-size: 22px;&quot;&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontSize=22;fontStyle=0;fontFamily=Georgia;arcSize=5;flipH=0;flipV=0;gradientDirection=radial;labelBorderColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelPosition=center;verticalLabelPosition=middle;container=1;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="uRvbGDv0hIpHDUg8ANP7-17">
+          <mxGeometry x="19" y="79" width="360.15999999999997" height="545" as="geometry">
+            <mxRectangle x="19" y="79" width="241" height="82" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRvbGDv0hIpHDUg8ANP7-19" value="&lt;p style=&quot;font-size: 22px;&quot;&gt;k-means Clustering&lt;br style=&quot;font-size: 22px;&quot;&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontSize=22;fontStyle=0;fontFamily=Georgia;arcSize=5;flipH=0;flipV=0;gradientDirection=radial;labelBorderColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelPosition=center;verticalLabelPosition=middle;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="uRvbGDv0hIpHDUg8ANP7-18">
+          <mxGeometry x="21.079999999999984" y="71" width="233.92" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="uRvbGDv0hIpHDUg8ANP7-11" value="&lt;p style=&quot;font-size: 22px;&quot;&gt;Reinforcement learning&lt;br style=&quot;font-size: 22px;&quot;&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontSize=22;fontStyle=0;fontFamily=Georgia;arcSize=5;flipH=0;flipV=0;gradientDirection=radial;labelBorderColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelPosition=center;verticalLabelPosition=middle;container=1;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="uRvbGDv0hIpHDUg8ANP7-1">
+          <mxGeometry x="30" y="400" width="360.16" height="330" as="geometry">
+            <mxRectangle x="30" y="400" width="360" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRvbGDv0hIpHDUg8ANP7-16" value="&lt;p style=&quot;font-size: 22px;&quot;&gt;Q-Learning&lt;br style=&quot;font-size: 22px;&quot;&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontSize=22;fontStyle=0;fontFamily=Georgia;arcSize=5;flipH=0;flipV=0;gradientDirection=radial;labelBorderColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelPosition=center;verticalLabelPosition=middle;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="uRvbGDv0hIpHDUg8ANP7-11">
+          <mxGeometry x="21.079999999999984" y="71" width="233.92" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="uRvbGDv0hIpHDUg8ANP7-15" value="&lt;p style=&quot;font-size: 22px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Markov decision process&lt;/span&gt;&amp;nbsp;&lt;br style=&quot;font-size: 22px;&quot;&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontSize=22;fontStyle=0;fontFamily=Georgia;arcSize=5;flipH=0;flipV=0;gradientDirection=radial;labelBorderColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelPosition=center;verticalLabelPosition=middle;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="uRvbGDv0hIpHDUg8ANP7-11">
+          <mxGeometry x="21.079999999999984" y="198" width="292.92" height="95" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
