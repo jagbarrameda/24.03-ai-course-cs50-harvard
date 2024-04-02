@@ -1,6 +1,7 @@
 import csv
 import sys
 import time
+from typing import Tuple
 
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
@@ -34,7 +35,7 @@ def main():
     # compareTime(y_test, predictions)
 
 
-def load_data(filename):
+def load_data(filename)-> Tuple[list, list]:
     """
     Load shopping data from a CSV file `filename` and convert into a list of
     evidence lists and a list of labels. Return a tuple (evidence, labels).
@@ -80,9 +81,9 @@ def load_data(filename):
                 [monthToInt(row[10])] +
                 [int(cell) for cell in row[11:15]] +
                 [1 if row[15] == "Returning_Visitor" else 0,
-                1 if row[16] == "True" else 0]
+                1 if row[16] == "TRUE" else 0]
             )
-            labels.append(1 if row[17] == "Revenue" else 0)
+            labels.append(1 if row[17] == "TRUE" else 0)
     return (evidence, labels)
 
 def monthToInt(month: str) -> int:
