@@ -1,9 +1,10 @@
 import math
 import random
 import time
+from typing import Tuple
 
 
-class Nim():
+class Nim:
 
     def __init__(self, initial=[1, 3, 5, 7]):
         """
@@ -70,7 +71,7 @@ class Nim():
             self.winner = self.player
 
 
-class NimAI():
+class NimAI:
 
     def __init__(self, alpha=0.5, epsilon=0.1):
         """
@@ -86,7 +87,7 @@ class NimAI():
         self.alpha = alpha
         self.epsilon = epsilon
 
-    def update(self, old_state, action, new_state, reward):
+    def update(self, old_state: list, action, new_state: list, reward):
         """
         Update Q-learning model, given an old state, an action taken
         in that state, a new resulting state, and the reward received
@@ -96,18 +97,26 @@ class NimAI():
         best_future = self.best_future_reward(new_state)
         self.update_q_value(old_state, action, old, reward, best_future)
 
-    def get_q_value(self, state, action):
+    def get_q_value(self, state: list, action: Tuple[int, int]) -> float:
         """
         Return the Q-value for the state `state` and the action `action`.
         If no Q-value exists yet in `self.q`, return 0.
         """
-        raise NotImplementedError
+        key = (tuple(state), action)
+        return self.q.get(key, 0)
 
-    def update_q_value(self, state, action, old_q, reward, future_rewards):
+    def update_q_value(
+        self,
+        state: list,
+        action: Tuple[int, int],
+        old_q,
+        reward: float,
+        future_rewards: float,
+    ) -> None:
         """
         Update the Q-value for the state `state` and the action `action`
         given the previous Q-value `old_q`, a current reward `reward`,
-        and an estiamte of future rewards `future_rewards`.
+        and an estimate of future rewards `future_rewards`.
 
         Use the formula:
 
@@ -118,9 +127,11 @@ class NimAI():
         `alpha` is the learning rate, and `new value estimate`
         is the sum of the current reward and estimated future rewards.
         """
-        raise NotImplementedError
+        key = (tuple(state), action)
+        new_value_estimate = reward + future_rewards
+        self.q[key] = old_q + self.alpha * (new_value_estimate - old_q)
 
-    def best_future_reward(self, state):
+    def best_future_reward(self, state: list) -> float:
         """
         Given a state `state`, consider all possible `(state, action)`
         pairs available in that state and return the maximum of all
@@ -130,9 +141,14 @@ class NimAI():
         Q-value in `self.q`. If there are no available actions in
         `state`, return 0.
         """
-        raise NotImplementedError
+        best = 0
+        state_tuple = tuple(state)
+        for key in self.q:
+            if key[0] == state_tuple:
+                best = max(best, self.q[key])
+        return best
 
-    def choose_action(self, state, epsilon=True):
+    def choose_action(self, state: list, epsilon=True) -> Tuple[int, int]:
         """
         Given a state `state`, return an action `(i, j)` to take.
 
@@ -147,7 +163,52 @@ class NimAI():
         If multiple actions have the same Q-value, any of those
         options is an acceptable return value.
         """
-        raise NotImplementedError
+        if epsilon and random.random() < self.epsilon:
+            actions = list(Nim.available_actions(state))
+        else:
+            actions = self.get_best_actions(state)
+
+        action = actions[random.randint(0, len(actions) - 1)]
+        
+        # verify action
+        if not self.is_valid_action(action, state):
+            raise Exception("bumbatá")
+        return action
+
+    def get_best_actions(self, state: list) -> list:
+        state_tuple = tuple(state)
+        best = -math.inf # the score of the best action
+        actions = []
+
+        for key in self.q:
+            q_value = self.q[key]
+            if key[0] != state_tuple:
+                continue
+            if q_value > best:
+                best = q_value
+                actions.clear()
+            actions.append(key[1])
+
+        if best == -math.inf:
+            # no info yet
+            # update self.q (not good to do it in a getter, but :/ )
+            actions = list(Nim.available_actions(state))
+            for action in actions:
+                self.q[(state_tuple, action)] = 0.0
+
+        for action in actions:
+            if not self.is_valid_action(action, state):
+                raise Exception("bumbatá")
+            
+        return actions
+
+    def is_valid_action(self, action, state):
+        return (
+            action[0] >= 0
+            and action[0] < len(state)
+            and action[1] >= 1
+            and state[action[0]] >= action[1]
+        )
 
 
 def train(n):
@@ -163,10 +224,7 @@ def train(n):
         game = Nim()
 
         # Keep track of last move made by either player
-        last = {
-            0: {"state": None, "action": None},
-            1: {"state": None, "action": None}
-        }
+        last = {0: {"state": None, "action": None}, 1: {"state": None, "action": None}}
 
         # Game loop
         while True:
@@ -190,7 +248,7 @@ def train(n):
                     last[game.player]["state"],
                     last[game.player]["action"],
                     new_state,
-                    1
+                    1,
                 )
                 break
 
@@ -200,7 +258,7 @@ def train(n):
                     last[game.player]["state"],
                     last[game.player]["action"],
                     new_state,
-                    0
+                    0,
                 )
 
     print("Done training")
@@ -263,3 +321,5 @@ def play(ai, human_player=None):
             winner = "Human" if game.winner == human_player else "AI"
             print(f"Winner is {winner}")
             return
+
+# ai = train(10000)
