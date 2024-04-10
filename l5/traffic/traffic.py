@@ -108,11 +108,15 @@ def get_model():
             tf.keras.layers.Conv2D(32, (3, 3), activation="relu"),
             # Max-pooling layer
             tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
+            # Second convolutional layer
+            tf.keras.layers.Conv2D(32, (3, 3), activation="relu"),
+            # Second pooling layer
+            tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
             # Flatten
             tf.keras.layers.Flatten(),
             # hidden layer with dropout
             tf.keras.layers.Dense(128, activation="relu"),
-            tf.keras.layers.Dropout(0.5),
+            tf.keras.layers.Dropout(0.2),
             # output layer
             tf.keras.layers.Dense(len(actual_categories), activation="softmax"),
         ]
